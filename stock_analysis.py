@@ -123,3 +123,23 @@ plt.tight_layout()
 plt.savefig("charts/return_distribution.png")
 
 plt.close()
+
+# Create scatterplot for CMG and MCD daily returns
+
+plt.figure(figsize=(8, 5))
+
+plt.scatter(
+    daily_returns["CMG"],
+    daily_returns["MCD"],
+    alpha=0.5
+)
+
+plt.title("CMG vs MCD Daily Returns")
+plt.xlabel("CMG Daily Return (%)")
+plt.ylabel("MCD Daily Return (%)")
+
+plt.tight_layout()
+
+plt.savefig("charts/return_relationship.png")
+
+plt.close()
