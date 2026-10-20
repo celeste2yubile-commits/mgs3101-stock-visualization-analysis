@@ -22,4 +22,3 @@ matplotlib
 How to Run
 python3 -m pip install -r requirements.txt
 python3 stock_analysis.py
-
