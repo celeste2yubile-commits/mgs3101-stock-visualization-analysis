@@ -1,6 +1,7 @@
 # Import libraries
 import pandas as pd
 import yfinance as yf
+import matplotlib.pyplot as plt
 
 # Stock tickers
 TICKERS = ["CMG", "MCD", "CAVA"]
@@ -83,3 +84,28 @@ print(monthly_summary)
 # Save output files
 monthly_summary.to_csv("outputs/monthly_summary.csv")
 correlation_matrix.to_csv("outputs/correlation_matrix.csv")
+
+# Create normalized price chart
+normalized_prices = close_prices.div(close_prices.iloc[0]) * 100
+
+plt.figure(figsize=(10, 6))
+
+for ticker in normalized_prices.columns:
+    plt.plot(
+        normalized_prices.index,
+        normalized_prices[ticker],
+        label=ticker
+    )
+
+plt.title("Normalized Stock Price Comparison")
+plt.xlabel("Date")
+plt.ylabel("Indexed Price (Start = 100)")
+plt.legend()
+
+plt.tight_layout()
+
+plt.savefig("charts/normalized_prices.png")
+
+plt.close()
+
+#create mode 100644 .DS_Store
