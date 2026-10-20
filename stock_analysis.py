@@ -109,3 +109,17 @@ plt.savefig("charts/normalized_prices.png")
 plt.close()
 
 #create mode 100644 .DS_Store
+
+# Create daily return distribution chart
+plt.figure(figsize=(8, 5))
+
+daily_returns.boxplot()
+
+plt.title("Daily Return Distribution")
+plt.ylabel("Daily Return (%)")
+
+plt.tight_layout()
+
+plt.savefig("charts/return_distribution.png")
+
+plt.close()
