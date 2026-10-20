@@ -11,10 +11,10 @@ CAVA
 Date Range
 June 15, 2026 – August 15, 2026
 
-Business Question
+Business Question:
 We are helping business analysts understand whether major restaurant companies experienced different stock-market reactions surrounding the July 2026 lettuce recall by comparing Chipotle (CMG), McDonald's (MCD), and CAVA.
 
-Tools Used
+Tools Used:
 Python
 pandas
 yfinance
