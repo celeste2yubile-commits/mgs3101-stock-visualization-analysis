@@ -69,3 +69,15 @@ print("\nCorrelation Matrix")
 correlation_matrix = daily_returns.corr()
 
 print(correlation_matrix)
+
+# Monthly average closing prices
+monthly_summary = close_prices.resample("M").mean()
+
+print("\nMonthly Average Closing Prices")
+print(monthly_summary)
+
+# Monthly average closing prices
+monthly_summary = close_prices.resample("ME").mean()
+
+print("\nMonthly Average Closing Prices")
+print(monthly_summary)
