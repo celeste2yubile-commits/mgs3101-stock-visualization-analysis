@@ -16,15 +16,3 @@ raw = yf.download(
 
 print("Shape:")
 print(raw.shape)
-
-print("\nColumns:")
-print(raw.columns)
-
-print("\nData Types:")
-print(raw.dtypes)
-
-print("\nMissing Values:")
-print(raw.isna().sum())
-
-print("\nFirst Five Rows:")
-print(raw.head())
