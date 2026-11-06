@@ -95,7 +95,7 @@ print(
 )
 print(
     f"3. MCD returned {recall_return:.2f}% on July 17. "
-    "Compare this with CMG and YUM; the return alone cannot prove causation."
+    "Compare this with CMG and CAVA; the return alone cannot prove causation."
 )
 
 print("\nRecall timeline source: FDA")
